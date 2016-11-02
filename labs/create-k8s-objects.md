@@ -1,4 +1,9 @@
 ## Set up Kubernetes objects
+In order to deploy the application with [Kubernetes](http://kubernetes.io/) you will use the following resources:
+  - [Deployments](http://kubernetes.io/docs/user-guide/deployments/) - replicates our application across our kubernetes nodes and allows us to do a controlled rolling update of our software across the fleet of application instances
+  - [Services](http://kubernetes.io/docs/user-guide/services/) - load balancing and service discovery for our internal services
+  - [Ingress](http://kubernetes.io/docs/user-guide/ingress/) - external load balancing and SSL termination for our external service
+  - [Secrets](http://kubernetes.io/docs/user-guide/secrets/) - secure storage of non public configuration information, SSL certs specifically in our case
 
 ## Create namespace and quota for Jenkins
 
