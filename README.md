@@ -7,7 +7,7 @@ This guide will take you through the steps necessary to continuously deliver you
 If you are not familiar with basic Kubernetes concepts, have a look at [Kubernetes 101](http://kubernetes.io/docs/user-guide/walkthrough/).
 
 ## The sample pipeline
-![](docs/img/jenkins-cd-container-engine.svg)
+![](docs/img/jenkins-cd-container-engine.png)
 
 ## The sample app
 You'll use a very simple sample application - `gceme` - as the basis for your CD pipeline. `gceme` is written in Go and is located in the `sample-app` directory in this repo. When you run the `gceme` binary on a GCE instance, it displays the instance's metadata in a pretty card:
