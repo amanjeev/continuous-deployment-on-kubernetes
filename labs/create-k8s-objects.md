@@ -4,6 +4,11 @@ In order to deploy the application with [Kubernetes](http://kubernetes.io/) you 
   - [Services](http://kubernetes.io/docs/user-guide/services/) - load balancing and service discovery for our internal services
   - [Ingress](http://kubernetes.io/docs/user-guide/ingress/) - external load balancing and SSL termination for our external service
   - [Secrets](http://kubernetes.io/docs/user-guide/secrets/) - secure storage of non public configuration information, SSL certs specifically in our case
+  
+In order to accomplish this goal you will use the following Jenkins plugins:
+  - [Jenkins Kubernetes Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Kubernetes+Plugin) - start Jenkins build executor containers in the Kubernetes cluster when builds are requested, terminate those containers when builds complete, freeing resources up for the rest of the cluster
+  - [Jenkins Pipelines](https://jenkins.io/solutions/pipeline/) - define our build pipeline declaratively and keep it checked into source code management alongside our application code
+  - [Google Oauth Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Google+OAuth+Plugin) - allows you to add your google oauth credentials to jenkins
 
 ## Create namespace and quota for Jenkins
 
