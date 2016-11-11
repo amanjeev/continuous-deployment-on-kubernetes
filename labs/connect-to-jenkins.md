@@ -1,7 +1,5 @@
 ### Connect to Jenkins
 
-TODO(askcarter):  Move service into this section?
-
 Now find the load balancer IP address of your Ingress service (in the `Address` field). **This field may take a few minutes to appear as the load balancer is being provisioned**:
 
 ```shell
@@ -42,7 +40,7 @@ Open the load balancer's IP address in your web browser, click "Log in" in the t
 > **Note**: To further secure your instance follow the steps found [here](https://wiki.jenkins-ci.org/display/JENKINS/Securing+Jenkins).
 
 
-![](docs/img/jenkins-login.png)
+![](../docs/img/jenkins-login.png)
 
 ### Your progress, and what's next
 You've got a Kubernetes cluster managed by Google Container Engine. You've deployed:
