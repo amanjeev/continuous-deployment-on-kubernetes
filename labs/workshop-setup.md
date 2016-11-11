@@ -1,10 +1,7 @@
 ## A Google Cloud Platform Account
 For this workshop, one will be provided for you.
 
-TODO(askcarter):  Add steps/flow.
-
 ## Enable Google Cloud Platform APIs 
-TODO(askcarter):  flesh out.
 [Enable the Google Compute Engine and Google Container Engine APIs](https://console.cloud.google.com/flows/enableapi?apiid=compute_component,container)
 
 ## Setup Cloud Shell
@@ -58,5 +55,3 @@ $ kubectl get pods
 ```
 You should see an empty response.
 
-## Wrap up
-TODO(askcarter):  What you learned.  What you're ready to do.  
