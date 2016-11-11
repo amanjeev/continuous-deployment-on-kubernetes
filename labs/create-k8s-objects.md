@@ -99,5 +99,3 @@ Now that the secrets have been uploaded, create the ingress load balancer. Note 
 $ kubectl apply -f jenkins/k8s/lb
 ```
 
-## Wrap up
-TODO(askcarter):  Add what you did. Add what you learned.  
