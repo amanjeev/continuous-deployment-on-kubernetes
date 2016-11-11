@@ -13,7 +13,7 @@ First we will need to configure our GCP credentials in order for Jenkins to be a
 
 You should now see 2 Global Credentials. Make a note of the name of second credentials as you will reference this in Phase 2:
 
-![](docs/img/jenkins-credentials.png)
+![](../docs/img/jenkins-credentials.png)
 
 
 ### Phase 2: Create a job
@@ -38,7 +38,7 @@ Navigate to your Jenkins UI and follow these steps to configure a Pipeline job (
 
 1. Click `Save`, leaving all other options with their defaults
 
-  ![](docs/img/clone_url.png)
+  ![](../docs/img/clone_url.png)
 
 A job entitled "Branch indexing" was kicked off to see identify the branches in your repository. If you refresh Jenkins you should see the `master` branch now has a job created for it.
 
@@ -98,11 +98,11 @@ You can use the [labels](http://kubernetes.io/docs/user-guide/labels/) `env: pro
 
 1. When your change has been pushed to the Git repository, navigate to Jenkins. Your build should start shortly.
 
-  ![](docs/img/first-build.png)
+  ![](../docs/img/first-build.png)
 
 1. Once the build is running, click the down arrow next to the build in the left column and choose **Console Output**:
 
-  ![](docs/img/console.png)
+  ![](../docs/img/console.png)
 
 1. Track the output for a few minutes and watch for the `kubectl --namespace=production apply...` to begin. When it starts, open the terminal that's polling staging's `/version` URL and observe it start to change in some of the requests:
 
@@ -130,11 +130,11 @@ You can use the [labels](http://kubernetes.io/docs/user-guide/labels/) `env: pro
    ```
 1. In a minute or so you should see that the master job in the sample-app folder has been kicked off:
 
-    ![](docs/img/production.png)
+    ![](../docs/img/production.png)
 
 1. Clicking on the `master` link will show you the stages of your pipeline as well as pass/fail and timing characteristics.
 
-    ![](docs/img/production_pipeline.png)
+    ![](../docs/img/production_pipeline.png)
 
 1. Open the terminal that's polling staging's `/version` URL and observe that the new version (2.0.0) has been rolled out and is serving all requests.
 
