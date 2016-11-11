@@ -14,7 +14,7 @@ $ kubectl run monolith --image askcarter/monolith:1.0.0
 $ kubectl expose deployment monolith --port 80 --type LoadBalancer
 ```
 
-## Scale up our Deployment
+## Scale up Deployment
 ```
 $ kubectl scale deployment monolith --replicas 3
 ```
