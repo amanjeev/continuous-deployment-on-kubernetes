@@ -78,5 +78,3 @@ Here you'll create your own copy of the `gceme` sample app in [Cloud Source Repo
     $ git commit -m "Initial commit"
     $ git push origin master
     ```
-## Wrap Up
-TODO(askcarter): What you learned. What comes next.
