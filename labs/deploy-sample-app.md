@@ -1,7 +1,7 @@
 ### Deploy the sample app to Kubernetes
 In this section you will deploy the `gceme` frontend and backend to Kubernetes using Kubernetes manifest files (included in this repo) that describe the environment that the `gceme` binary/Docker image will be deployed to. They use a default `gceme` Docker image that you will be updating with your own in a later section.
 
-You'll have two primary environments - staging and production - and use Kubernetes namespaces to isolate them.
+You'll have two primary environments - staging (canary) and production - and use Kubernetes namespaces to isolate them.
 
 > **Note**: The manifest files for this section of the tutorial are in `sample-app/k8s`. You are encouraged to open and read each one before creating it per the instructions.
 
@@ -17,7 +17,7 @@ You'll have two primary environments - staging and production - and use Kubernet
   $ kubectl create ns production
   ```
 
-1. Create the staging and production Deployments and Services:
+1. Create the and production Deployments and Services:
 
     ```shell
     $ kubectl --namespace=production apply -f k8s/production
