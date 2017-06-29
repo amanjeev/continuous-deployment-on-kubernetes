@@ -21,7 +21,7 @@ You'll have two primary environments - staging and production - and use Kubernet
 
     ```shell
     $ kubectl --namespace=production apply -f k8s/production
-    $ kubectl --namespace=production apply -f k8s/staging
+    $ kubectl --namespace=production apply -f k8s/canary
     $ kubectl --namespace=production apply -f k8s/services
     ```
 
